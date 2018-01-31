@@ -7,7 +7,9 @@ sleep 5
 
 my_ip=$(hostname --ip-address)
 
-export ZOO_MY_ID=${HOSTNAME##*-}
+index=${HOSTNAME##*-}
+ZOO_MY_ID=$(($index+1))
+export ZOO_MY_ID
 
 
 ## /docker-entrypoint.sh "$@"
