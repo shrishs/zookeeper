@@ -12,5 +12,4 @@ ZOO_MY_ID=$(($index+1))
 export ZOO_MY_ID
 
 
-## /docker-entrypoint.sh "$@"
 exec /docker-entrypoint.sh "$@"
